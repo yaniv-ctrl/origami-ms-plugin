@@ -9,8 +9,7 @@ Understanding the two-level navigation is essential before building anything:
 - Click the **"+" at the right end of the top bar** to add a new category. Enter a name and icon.
 - Categories show in the top bar; if there are many, overflow items appear in the "≡" hamburger menu.
 
-**Second row (tab bar — pages within the selected category)*
-
+**Second row (tab bar — pages within the selected category)**
 - Each tab is a **page** inside the current category. Most pages are Entity Pages.
 - Click the **"+" at the right end of the second row** to add a new page. Choose:
   - **Entity Page** — a standard data entity with fields, views, and records
@@ -30,11 +29,11 @@ Understanding the two-level navigation is essential before building anything:
 - **Country Authorization**: Restrict logins by country. Set to "Use" to specify allowed countries.
 - **API IP Authorization**: Restrict API access to specific IP addresses (independent of login restrictions).
 
-### Menu Settingsr
+### Menu Settings
 - **Menu Position**: Choose between Top Menu (default) or Side Menu.
 
 ### General Settings
-- **System Language**: Supports English, Hebrew, Spanish, French, Dutch, Cbinese, Arabic, Portuguese, German, Russian, Japanese, Italian, Hindi, Bengali, Korean, Turkish, Vietnamese. Determines text direction (RTL for Hebrew/Arabic, LTR for others)
+- **System Language**: Supports English, Hebrew, Spanish, French, Dutch, Chinese, Arabic, Portuguese, German, Russian, Japanese, Italian, Hindi, Bengali, Korean, Turkish, Vietnamese. Determines text direction (RTL for Hebrew/Arabic, LTR for others).
 - **Date Format**: Global date format setting.
 - **Timezone**: Set organization timezone.
 - **Number Format**: Configure number display format.
@@ -86,10 +85,10 @@ Understanding the two-level navigation is essential before building anything:
 ## Active Directory Settings (SSO)
 
 ### LDAP (Active Directory)
-- **Type**: "Without", "Use Active Directory" (LDAP), or a Use Azure" (Azure AD/SSO)
+- **Type**: "Without", "Use Active Directory" (LDAP), or "Use Azure" (Azure AD/SSO)
 - **Port Number**: Connection port
 - **Domain DN**: Domain Distinguished Name
-- **User DJ**: User Distinguished Name
+- **User DN**: User Distinguished Name
 - **Password**: Domain credentials
 
 ### Azure Active Directory
