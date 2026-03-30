@@ -1,0 +1,10 @@
+{
+  "name": "origami-ms",
+  "version": "1.0.0",
+  "description": "Connect Claude to Origami.ms — read, create, update, and delete records, manage invoices, upload files, and get expert guidance on building Origami environments",
+  "author": {
+    "name": "Origami.ms"
+  },
+  "homepage": "https://origami.ms",
+  "keywords": ["origami", "crm", "database", "low-code", "api", "records", "invoices"]
+}
