@@ -212,7 +212,7 @@ if ($days < 0) {
 ### Lease duration in months
 ```php
 $start = strtotime(#lease_start_date);
-$end  = strtotime(#lease_end_date);
+$end   = strtotime(#lease_end_date);
 $months = round(($end - $start) / (30.44 * 86400));
 return $months . " months";
 ```
@@ -220,7 +220,7 @@ return $months . " months";
 ### Concatenated reference code
 ```php
 // e.g. "PROJ-2025-042"
-strtoupper(substr(#hType, 0, 4)) . "-" . date("Y") . "-" . str_pad((string)#sequence_number, 3, "0", STR_PAD_LEFT)
+strtoupper(substr(#type, 0, 4)) . "-" . date("Y") . "-" . str_pad((string)#sequence_number, 3, "0", STR_PAD_LEFT)
 ```
 
 ### Conditional urgency flag
