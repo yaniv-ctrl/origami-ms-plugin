@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "origami-ms": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/servers/origami-server.js"],
+      "env": {
+        "ORIGAMI_ACCOUNT": "${ORIGAMI_ACCOUNT}",
+        "ORIGAMI_USERNAME": "${ORIGAMI_USERNAME}",
+        "ORIGAMI_API_SECRET": "${ORIGAMI_API_SECRET}"
+      }
+    }
+  }
+}
