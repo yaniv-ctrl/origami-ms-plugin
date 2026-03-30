@@ -70,7 +70,7 @@ Follow this order to avoid dependency issues:
 
 1. **System setup** — preferences, timezone, email/SMTP, user groups, users
 2. **Categories and entities** — create in top nav, entity names must be globally unique
-3. **Fields** — core fields first, then relations (target entities must exist)
+3. **Fields** — core fields first, then descriptive, then relations (target entities must exist)
 4. **Views** — default table view minimum, plus kanban/calendar as needed
 5. **Visual Editor** — arrange field layout per entity
 6. **Permissions** — view/edit/create/delete per entity per user group
