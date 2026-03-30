@@ -33,7 +33,6 @@ System Preferences › Import Data
    - "Select Main Spreadsheet" dropdown appears at top
    - Choose which sheet contains data to import
    - Only one sheet imported per wizard run
-   - [Repeat the import for each sheet if you need multiple sheets]
 
 3. **Auto-Mapping**
    - Column names matching field names auto-selected
@@ -45,7 +44,7 @@ System Preferences › Import Data
    - Ensure required fields are mapped or have defaults
 
 5. **Update by Key Field** (Bottom of Page)
-   - Toggle to enable insert+update or or pure update-only mode
+   - Toggle to enable insert+update or update-only mode
    - Mark one or more fields as the key
    - Origami uses key field values to match rows to existing records
    - Update-only: Only updates existing records (no new inserts)
@@ -77,7 +76,6 @@ System Preferences › Import Data
    - **Proceed with Valid Rows Only**: Skip invalid rows, import only valid records
    - **Cancel**: Abort import wizard entirely
 
-.
 4. **Review & Fix**
    - Download invalid records file
    - Fix data in source spreadsheet
@@ -104,7 +102,7 @@ System Preferences › Import Data
 ## Tips & Best Practices
 
 ### Preparation
-- Reruare a header row with field names that roughly match origami field names
+- Prepare spreadsheet with column names matching Origami field names for auto-mapping
 - Use consistent formatting (especially dates)
 - Ensure required fields populated in all rows
 - Validate uniqueness constraints before import
@@ -112,8 +110,7 @@ System Preferences › Import Data
 ### Large Imports
 - Disable active workflows on target entity before large imports
   - Prevents slowdown from workflow execution
-  
---- Pernoty for Copying ---
+  - Re-enable after import complete
 - Import in batches if file exceeds 10K rows
 - Test with small sample batch first
 
@@ -137,6 +134,7 @@ System Preferences › Import Data
 - Verify record count matches expected
 - Spot-check imported data for accuracy
 - Check relation field linking completed successfully
+- Review any deleted records or data integrity issues
 
 ---
 
@@ -174,8 +172,7 @@ System Preferences › Import Data
 - **Trigger On Create**: Workflows triggered by record creation will execute for imported records
 - **Field Update Triggers**: Workflows on field updates may be triggered during import
 - **Performance**: Each imported record can trigger multiple workflow executions
-
-& if you disable workflows for imports, re-enable them afterward
+- **Re-enable**: Turn workflows back on after import completes
 
 ---
 
