@@ -61,23 +61,31 @@ When the Origami MCP server is connected, use these tools directly:
       "group_data_name": "g_1790",
       "data": [{ "fld_11693": "John", "fld_11694": "Doe" }]
     }
-  C�`
+  ]
+}
 ```
 
 The `data` array must contain a **single object** with all field key-value pairs. Never send separate objects per field.
 
 ### Read: use filters as array-of-arrays
 
-``json
-{ "entity_data_name": "e_725", "filter": [["fld_11693", "=", "John"]] }
+```json
+{
+  "entity_data_name": "e_725",
+  "filter": [["fld_11693", "=", "John"]]
+}
 ```
 
 **Critical**: Wrong filter format (e.g. array of objects) silently returns ALL records without error.
 
-### Update: uses filter + field triplets (NOT Form_data)
+### Update: uses filter + field triplets (NOT form_data)
 
 ```json
-{ "entity_data_name": "e_725", "filter": [["_id", "=", "abc123"]], "field": [["fld_11693", "New Name", 0]] }
+{
+  "entity_data_name": "e_725",
+  "filter": [["_id", "=", "abc123"]],
+  "field": [["fld_11693", "New Name", 0]]
+}
 ```
 
 Field triplet format: `[field_data_name, new_value, group_index]`. group_index is 0 for non-repeatable groups.
@@ -92,7 +100,7 @@ Field triplet format: `[field_data_name, new_value, group_index]`. group_index i
 
 1. **All responses return HTTP 200** — check the JSON body for errors
 2. **Filters must be array-of-arrays** — wrong format silently returns all data
-3. **Create uses form_data, Update uses filter+faield** — completely different formats
+3. **Create uses form_data, Update uses filter+field** — completely different formats
 4. **Phone format**: must be `XXX-XXXXXXX` (e.g. `050-1234567`)
 5. **Archive endpoint** has NO `/format/json` suffix and uses `id` (not `_id`)
 6. **Invoice endpoints** use `/invoices/api/`, not `/entities/api/`
